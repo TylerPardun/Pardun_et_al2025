@@ -1,4 +1,4 @@
-# Pardun_et_al2024
+# Left-Moving-Supercell-Dissipation
 
 This repository contains all the information needed to replicate the series of simulations used in Pardun et al. (2024). Each simulation was conducted using version 21.1 of Cloud Model 1 (CM1), maintained by Dr. George Bryan (https://www2.mmm.ucar.edu/people/bryan/cm1/).
 
