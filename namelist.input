@@ -1,6 +1,6 @@
  &param0
- nx           =     432,
- ny           =     432,
+ nx           =     660,
+ ny           =     660,
  nz           =     106,
  ppnode       =      64,
  timeformat   =       2,
@@ -53,8 +53,8 @@
  ihail     =  1,
  iautoc    =  1,
  cuparam   =  0,
- icor      =  1,
- lspgrad   =  1,
+ icor      =  0,
+ lspgrad   =  0,
  eqtset    =  2,
  idiss     =  1,
  efall     =  0,
@@ -63,7 +63,7 @@
  ebc       =  2,
  sbc       =  2,
  nbc       =  2,
- bbc       =  3,
+ bbc       =  1,
  tbc       =  1,
  irbc      =  4,
  roflux    =  0,
@@ -71,8 +71,8 @@
  isnd      =  7,
  iwnd      =  2,
  itern     =  0,
- iinit     =  12,
- irandp    =  1,
+ iinit     =  0,
+ irandp    =  0,
  ibalance  =  0,
  iorigin   =  2,
  axisymm   =  0,
@@ -94,7 +94,7 @@
  zd      = 15000.0,
  xhd     = 100000.0,
  alphobc = 60.0,
- umove   =  4.0,
+ umove   =  0.0,
  vmove   =  5.0,
  v_t     =      7.0,
  l_h     =    100.0,
@@ -110,19 +110,19 @@
  &param11
  radopt  =        0,
  dtrad   =    300.0,
- ctrlat  =    36.68,
- ctrlon  =   -98.35,
- year    =     2009,
- month   =        5,
+ ctrlat  =    34.8864619,
+ ctrlon  =   -102.7999991,
+ year    =     2019,
+ month   =        6,
  day     =       15,
- hour    =       21,
- minute  =       38,
+ hour    =       23,
+ minute  =       19,
  second  =       00,
  /
 
  &param12
  isfcflx    =      0,
- sfcmodel   =      1,
+ sfcmodel   =      0,
  oceanmodel =      0,
  initsfc    =      1,
  tsk0       = 299.28,
@@ -151,7 +151,7 @@
  /
 
  &param4
- stretch_x =      1,
+ stretch_x =      0,
  dx_inner  =   250.0,
  dx_outer  =   6000.0,
  nos_x_len =  100000.0,
@@ -159,7 +159,7 @@
  /
 
  &param5
- stretch_y =      1,
+ stretch_y =      0,
  dy_inner  =    250.0,
  dy_outer  =    6000.0,
  nos_y_len =  100000.0,
@@ -184,12 +184,12 @@
  /
 
  &param8
- var1      =   6000.0,
- var2      =   8160.0,
- var3      =   7080.0,
- var4      =   81600.0,
- var5      =   0.0,
- var6      =   0.0,
+ var1      =   6900.0,
+ var2      =   9060.0,
+ var3      =   7980.0,
+ var4      =   9060.0,
+ var5      =   1.0,
+ var6      =   1.0,
  var7      =   0.0,
  var8      =   0.0,
  var9      =   0.0,
@@ -283,14 +283,14 @@
  restart_file_prs0     =  .false.,
  restart_file_pi0      =  .false.,
  restart_file_rho0     =  .false.,
- restart_file_qv0      =  .false.,
- restart_file_u0       =  .false.,
- restart_file_v0       =  .false.,
+ restart_file_qv0      =  .true.,
+ restart_file_u0       =  .true.,
+ restart_file_v0       =  .true.,
  restart_file_zs       =  .false.,
  restart_file_zh       =  .false.,
  restart_file_zf       =  .false.,
  restart_file_diags    =  .false.,
- restart_use_theta     =  .false.,
+ restart_use_theta     =  .true.,
  /
 
  &param10
@@ -410,8 +410,3 @@
    cnoh    = 4.e4,  ! for single moment only
    infall  = 4      ! Sedimentation option
  /
-
- &io_params
-   parallel_io = .true.
- /
-
