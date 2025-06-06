@@ -8,4 +8,6 @@ The "namelist.input" is the namelist file used for each simulation. This is stan
 
 The BSS files used to update the base state in each simulation inlcudes the thermodynamic and kinematic profiles in "thermo_replace" and "wind_replace", respectively. 
 
+The "toy.input" file shows the configuration for tendencey nudging used to initiated convection within the modeled domain (Flournoy and Rasmussen 2023)
+
 Please contact Tyler Pardun if you have any questions, comments, conundrums, or other inquiries. (tyler.pardun@noaa.gov)
